@@ -1,0 +1,81 @@
+:root{
+  --bs-orange:#ffd200;
+}
+
+body::before {
+  top: 0;
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: url("../img/back-2.jpg");
+  background-repeat: repeat;
+  background-size: 150px;
+  opacity: 0.5;
+}
+
+.pet-image {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border: solid 3px;
+  border-color: rgb(192, 192, 192);
+  border-radius: 50px;
+}
+
+.d-sm-block.divider {
+  border: solid 1px;
+  border-color: rgb(221,221,221);
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.card.pop-up-card {
+  bottom: 0px;
+  top: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s ease all;
+  display: block;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 500px;
+  position: fixed;
+}
+
+.card.pop-up-card.active {
+  opacity: 1;
+  visibility: visible;
+  transition: .5s ease all;
+}
+
+.rug-dragging-item {
+  z-index:12 !important;
+}
+
+.rug .rug-items.__card {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important; 
+  transform: scale(70%);
+  margin-top: -55px;
+  margin-bottom: -55px;
+}
+.rug-card-size{
+  display:none;
+}
+.rug-handle-info span{
+  display:none !important;
+}
+.rug-handle-drop-text{
+  display:none;
+}
+.slide-image{
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
+}
